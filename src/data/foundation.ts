@@ -7,28 +7,16 @@ export interface FoundationItem {
 
 export const education: FoundationItem[] = [
   {
-    title: "High School Diploma",
-    place: "Lincoln High School",
-    period: "2014 — 2018",
-    description: [
-      "Maintained a 3.8 GPA while competing in competitive cheer year-round.",
-      "Completed AP Computer Science, sparking an early interest in programming.",
-      "Served as class treasurer for two years.",
-      "Volunteered as a peer tutor in the school's math lab.",
-      "Balanced academics with 20+ hours a week of practice and travel.",
-    ],
+    title: "National University — Manila",
+    place: "B.S. in Computer Science",
+    period: "2019 — 2023",
+    description: [],
   },
   {
-    title: "B.S. in Computer Science",
-    place: "State University",
-    period: "2018 — 2022",
-    description: [
-      "Graduated cum laude while competing on the university's competitive cheer team.",
-      "Completed a senior capstone building a web accessibility tool.",
-      "Worked part-time as a teaching assistant for intro programming courses.",
-      "Led group projects as team lead across three semesters.",
-      "Balanced a full course load with 15+ hours a week of team practice.",
-    ],
+    title: "National University Nazareth Manila",
+    place: "Senior High School — STEM",
+    period: "2017 — 2019",
+    description: [],
   },
 ];
 

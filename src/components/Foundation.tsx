@@ -17,9 +17,12 @@ function Timeline({ items }: { items: FoundationItem[] }) {
           <span className="absolute -left-[calc(2rem+5px)] top-1.5 h-2.5 w-2.5 rounded-full bg-accent shadow-[0_0_0_4px_rgba(34,211,238,0.15)]" />
 
           <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-            <h3 className="text-lg font-semibold text-white">
-              {item.title} <span className="text-accent">@ {item.place}</span>
-            </h3>
+            <div>
+              <h3 className="text-lg font-semibold text-white">
+                {item.title}
+              </h3>
+              <p className="text-sm text-accent">{item.place}</p>
+            </div>
             <span className="font-mono text-xs text-slate-500">
               {item.period}
             </span>
