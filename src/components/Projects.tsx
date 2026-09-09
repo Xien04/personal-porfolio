@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import { projects } from "../data/projects";
+import TechBadge from "./TechBadge";
 
 export default function Projects() {
   return (
@@ -62,13 +63,8 @@ export default function Projects() {
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full bg-white/5 px-3 py-1 font-mono text-xs text-slate-300"
-                  >
-                    {tag}
-                  </span>
+                {project.tags.map((tag, j) => (
+                  <TechBadge key={tag} name={tag} delay={i * 0.1 + j * 0.06} />
                 ))}
               </div>
             </motion.div>
