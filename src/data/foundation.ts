@@ -10,13 +10,22 @@ export const education: FoundationItem[] = [
     title: "National University — Manila",
     place: "B.S. in Computer Science",
     period: "2019 — 2023",
-    description: [],
+    description: [
+      "Graduated with a focus on software engineering and web development.",
+      "Built a full-stack capstone project as part of a small team.",
+      "Served as a peer tutor for introductory programming courses.",
+      "Active member of the university's computer science student org.",
+    ],
   },
   {
     title: "National University Nazareth Manila",
     place: "Senior High School — STEM",
     period: "2017 — 2019",
-    description: [],
+    description: [
+      "Completed the Science, Technology, Engineering, and Mathematics track.",
+      "Graduated with honors while balancing academics and competitive cheerleading.",
+      "Participated in school science and math competitions.",
+    ],
   },
 ];
 
