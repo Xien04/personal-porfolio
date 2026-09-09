@@ -12,7 +12,7 @@ export default function Skills() {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <p className="mb-2 font-mono text-sm text-accent">02. Skills</p>
+          <p className="mb-2 font-mono text-sm text-accent">03. Skills</p>
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
             Tools & technologies
           </h2>

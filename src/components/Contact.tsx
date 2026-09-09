@@ -11,7 +11,7 @@ export default function Contact() {
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="mb-2 font-mono text-sm text-accent">04. Contact</p>
+          <p className="mb-2 font-mono text-sm text-accent">05. Contact</p>
           <h2 className="mb-6 text-3xl font-bold text-white sm:text-4xl">
             Let's work together
           </h2>
