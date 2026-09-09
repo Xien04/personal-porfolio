@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import ExperiencePage from "./pages/ExperiencePage";
 import CertificationsPage from "./pages/CertificationsPage";
+import FoundationPage from "./pages/FoundationPage";
 
 function ScrollToHash() {
   const { pathname, hash } = useLocation();
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/experience" element={<ExperiencePage />} />
           <Route path="/certifications" element={<CertificationsPage />} />
+          <Route path="/foundation" element={<FoundationPage />} />
         </Routes>
       </main>
       <Footer />
