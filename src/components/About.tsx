@@ -10,21 +10,29 @@ export default function About() {
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="mb-2 font-mono text-sm text-accent">01. About</p>
+          <p className="mb-2 font-mono text-sm text-accent">About</p>
           <h2 className="mb-8 text-3xl font-bold text-white sm:text-4xl">
             A bit about me
           </h2>
           <div className="space-y-4 text-slate-400">
             <p>
-              I'm a software developer who enjoys turning ideas into fast,
-              reliable, and well-crafted products. I care about clean code,
-              thoughtful UX, and the details that make an interface feel
-              effortless to use.
+              I'm a software engineer and Business Systems Developer
+              transitioning into data engineering. I enjoy building reliable
+              applications, integrating APIs, automating data workflows, and
+              turning complex requirements into practical, well-crafted
+              solutions.
             </p>
             <p>
-              Outside of writing code, I like exploring new tools, reading up
-              on system design, and contributing to side projects that push
-              me to learn something new.
+              My experience includes REST APIs, Python, SQL, JSON processing,
+              data transformation, workflow automation, error handling, and
+              system-to-system synchronization. I'm currently deepening my
+              expertise in ETL/ELT pipelines, data modeling, cloud platforms,
+              and modern data engineering technologies.
+            </p>
+            <p>
+              Outside of coding, I enjoy exploring new tools, learning about
+              system design, and working on side projects that challenge me to
+              build something new.
             </p>
           </div>
         </motion.div>

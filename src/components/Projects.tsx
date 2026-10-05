@@ -14,7 +14,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <p className="mb-2 font-mono text-sm text-accent">04. Projects</p>
+          <p className="mb-2 font-mono text-sm text-accent">Projects</p>
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
             Things I've built
           </h2>
@@ -31,9 +31,14 @@ export default function Projects() {
               className="group flex flex-col rounded-xl border border-white/5 bg-surface p-6 transition-all hover:-translate-y-1 hover:border-accent/40"
             >
               <div className="mb-4 flex items-center justify-between">
-                <h3 className="text-lg font-semibold text-white group-hover:text-accent transition-colors">
-                  {project.title}
-                </h3>
+                <div>
+                  <h3 className="text-lg font-semibold text-white transition-colors group-hover:text-accent">
+                    {project.title} | {project.year}
+                  </h3>
+                  <p className="mt-1 text-sm italic text-slate-400">
+                    {project.company}
+                  </p>
+                </div>
                 <div className="flex gap-3 text-slate-400">
                   {project.repoUrl && (
                     <a

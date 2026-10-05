@@ -8,13 +8,13 @@ export interface FoundationItem {
 export const education: FoundationItem[] = [
   {
     title: "National University — Manila",
-    place: "B.S. in Computer Science",
+    place: "B.S. in Computer Science with Specialization in Digital Forensics",
     period: "2019 — 2023",
     description: [
-      "Graduated with a focus on software engineering and web development.",
+      "Graduated with a focus on software engineering with Specialization in Digital Digital Forensics.",
       "Built a full-stack capstone project as part of a small team.",
       "Served as a peer tutor for introductory programming courses.",
-      "Active member of the university's computer science student org.",
+      "Active member of the university's computer science student org. - Junior Philippines Computer Society",
     ],
   },
   {
@@ -23,8 +23,7 @@ export const education: FoundationItem[] = [
     period: "2017 — 2019",
     description: [
       "Completed the Science, Technology, Engineering, and Mathematics track.",
-      "Graduated with honors while balancing academics and competitive cheerleading.",
-      "Participated in school science and math competitions.",
+      "Balancing academics and competitive cheerleading.",
     ],
   },
 ];
