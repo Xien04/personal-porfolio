@@ -8,9 +8,9 @@ export interface ExperienceItem {
 
 export const experience: ExperienceItem[] = [
   {
-    role: "Senior Software Developer",
-    company: "Nimbus Systems",
-    period: "2024 — Present",
+    role: "Senior Software Engineer",
+    company: "CC3 Solutions, LLC",
+    period: "July 2026 — Present",
     description: [
       "Led the frontend rebuild of a customer dashboard, cutting page load time by 40%.",
       "Mentored two junior developers through code reviews and pairing sessions.",
@@ -21,9 +21,9 @@ export const experience: ExperienceItem[] = [
     tags: ["React", "TypeScript", "Node.js"],
   },
   {
-    role: "Software Developer",
-    company: "Bluecrest Digital",
-    period: "2022 — 2024",
+    role: "Software Developer Supervisor",
+    company: "McWilson Corp",
+    period: "February 2026 — June 2026",
     description: [
       "Built and shipped customer-facing features used by over 50,000 monthly active users.",
       "Collaborated with product and design teams to scope and estimate new initiatives.",
@@ -34,35 +34,21 @@ export const experience: ExperienceItem[] = [
     tags: ["Next.js", "PostgreSQL", "Docker"],
   },
   {
-    role: "Frontend Developer",
-    company: "Harbor & Finch",
-    period: "2021 — 2022",
+    role: "System Developer",
+    company: "SM Engineering Design and Development Corp.",
+    period: "August 2023 — November 2025",
     description: [
-      "Rebuilt the marketing site in React, improving Lighthouse performance scores by 25 points.",
-      "Implemented a design system shared between marketing and product teams.",
-      "Automated visual regression testing, cutting manual QA time in half.",
-      "Coordinated with SEO consultants to improve organic search rankings.",
-      "Localized the site into three additional languages.",
-    ],
-    tags: ["JavaScript", "Tailwind CSS", "Framer Motion"],
-  },
-  {
-    role: "Junior Developer",
-    company: "Ridgeline Labs",
-    period: "2020 — 2021",
-    description: [
-      "Contributed to internal tools used by the operations and support teams.",
-      "Fixed over 60 bugs across the ticketing and reporting platforms.",
-      "Improved unit test coverage from 45% to 78% on the core service.",
-      "Helped modernize a legacy jQuery codebase to a component-based architecture.",
-      "Documented onboarding guides that shortened new-hire ramp-up time.",
+      "Developed data-driven business applications that centralized project, contractor, financial, and insurance data for operational reporting and decision-making.",
+      "Built a project monitoring system with turnaround-time tracking, automated overdue escalations, and SharePoint document integration.",
+      "Designed a contractor database supporting financial assessments, insurance validation, balanced project allocation, and expiring-policy detection.",
+      "ested, deployed, and maintained application features and automated data workflows to improve system reliability and data accuracy.",
     ],
     tags: ["JavaScript", "REST APIs", "SQL"],
   },
   {
-    role: "Intern Software Developer",
-    company: "Vantage Point Studio",
-    period: "2019 — 2020",
+    role: "Intern Security Analyst",
+    company: "SM Investment Corp.",
+    period: "January 2023 — July 2023",
     description: [
       "Assisted in building prototype features for an internal analytics dashboard.",
       "Wrote scripts to automate repetitive data-entry tasks, saving hours weekly.",

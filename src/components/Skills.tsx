@@ -16,7 +16,7 @@ export default function Skills() {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <p className="mb-2 font-mono text-sm text-accent">03. Skills</p>
+          <p className="mb-2 font-mono text-sm text-accent">Skills</p>
           <h2 className="text-3xl font-bold sm:text-4xl">
             Tools &{" "}
             <span className="text-gradient bg-[length:200%_auto] animate-gradient-x">
