@@ -13,7 +13,7 @@ export default function Experience() {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <p className="mb-2 font-mono text-sm text-accent">02. Experience</p>
+          <p className="mb-2 font-mono text-sm text-accent">Experience</p>
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
             Where I've worked
           </h2>

@@ -8,15 +8,13 @@ export interface ExperienceItem {
 
 export const experience: ExperienceItem[] = [
   {
-    role: "Senior Software Engineer",
+    role: "Software Engineer",
     company: "CC3 Solutions, LLC",
     period: "July 2026 — Present",
     description: [
-      "Led the frontend rebuild of a customer dashboard, cutting page load time by 40%.",
-      "Mentored two junior developers through code reviews and pairing sessions.",
-      "Introduced a component library that reduced duplicate UI code across five products.",
-      "Partnered with design to establish accessibility standards adopted company-wide.",
-      "Drove the migration from a legacy REST API to a type-safe GraphQL layer.",
+      "Lead the end-to-end development and deployment of CRM application using Python, SQL, and Azure, supporting hundreds of users across 6 deparments. ",
+      "Translate business requirements into technical designs, relational data models, API, and scalable systems components in collaboration with product managers and stakeholders ",
+      "Build and maintain backend services and automated workflows that  reduce manual processing effort by approximately 40-50%",
     ],
     tags: ["React", "TypeScript", "Node.js"],
   },
@@ -25,18 +23,16 @@ export const experience: ExperienceItem[] = [
     company: "McWilson Corp",
     period: "February 2026 — June 2026",
     description: [
-      "Built and shipped customer-facing features used by over 50,000 monthly active users.",
-      "Collaborated with product and design teams to scope and estimate new initiatives.",
-      "Reduced API response times by 30% through targeted query optimization.",
-      "Wrote integration tests that caught regressions before three major releases.",
-      "Owned the on-call rotation for the payments service with zero missed incidents.",
+      "Supervised a team of 4 developers, coordinating task assignments, conducting code reviews, technical guidance, and overseeing the delivery of web applications for external clients.",
+      "Developed and maintained web applications using Python, JavaScript, SQL, Django Framewok, streamlining data entry, records updates, document submission, and verification workflow, reducing manual effort and improving record accuracy. ",
+      "Delivered application features and third-party API integration based on stakeholder requirements and user feedback, reducing processing time by 40% ",
     ],
     tags: ["Next.js", "PostgreSQL", "Docker"],
   },
   {
     role: "System Developer",
     company: "SM Engineering Design and Development Corp.",
-    period: "August 2023 — November 2025",
+    period: "August 2023 — February 2026",
     description: [
       "Developed data-driven business applications that centralized project, contractor, financial, and insurance data for operational reporting and decision-making.",
       "Built a project monitoring system with turnaround-time tracking, automated overdue escalations, and SharePoint document integration.",

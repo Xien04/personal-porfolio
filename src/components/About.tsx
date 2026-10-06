@@ -16,7 +16,7 @@ export default function About() {
           </h2>
           <div className="space-y-4 text-slate-400">
             <p>
-              I'm a software engineer and Business Systems Developer
+              I'm a Software Engineer and Business Systems Developer
               transitioning into data engineering. I enjoy building reliable
               applications, integrating APIs, automating data workflows, and
               turning complex requirements into practical, well-crafted

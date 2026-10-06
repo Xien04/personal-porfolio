@@ -4,10 +4,11 @@ import ParticleBackground from "./ParticleBackground";
 import { useTypewriter } from "../hooks/useTypewriter";
 
 const ROLES = [
-  "Software Developer",
-  "Frontend Engineer",
-  "React Developer",
-  "Problem Solver",
+  "Software Engineer",
+  "Data Engineer",
+  "Business Solution Engineer",
+  "AI Engineer",
+  "Full Stack Developer",
 ];
 
 export default function Hero() {
@@ -75,13 +76,13 @@ export default function Hero() {
             href="#projects"
             className="w-full rounded-lg bg-gradient-to-r from-accent to-accent2 px-8 py-3 text-sm font-semibold text-bg shadow-lg shadow-accent/20 transition-transform hover:scale-105 sm:w-auto"
           >
-            View My Work
+            Explore my Work
           </a>
           <a
             href="#contact"
             className="w-full rounded-lg border border-slate-700 bg-white/5 px-8 py-3 text-sm font-semibold text-slate-200 backdrop-blur transition-colors hover:border-accent hover:text-accent sm:w-auto"
           >
-            Get In Touch
+            Start a conversation
           </a>
         </motion.div>
 
@@ -92,10 +93,10 @@ export default function Hero() {
           className="mt-12 flex items-center justify-center gap-6"
         >
           {[
-            { icon: Github, href: "https://github.com", label: "GitHub" },
+            { icon: Github, href: "https://github.com/Xien04", label: "GitHub" },
             {
               icon: Linkedin,
-              href: "https://linkedin.com",
+              href: "https://linkedin.com/in/brenson-go-b6934a161",
               label: "LinkedIn",
             },
             {
