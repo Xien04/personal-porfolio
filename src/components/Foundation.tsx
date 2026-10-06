@@ -3,8 +3,14 @@ import { GraduationCap, Trophy } from "lucide-react";
 import { education, athletics, type FoundationItem } from "../data/foundation";
 
 function Timeline({ items }: { items: FoundationItem[] }) {
+  const hasLogos = items.some((item) => item.logo);
+
   return (
-    <div className="relative border-l border-white/10 pl-8">
+    <div
+      className={`relative border-l border-white/10 pl-8 ${
+        hasLogos ? "md:pl-36" : ""
+      }`}
+    >
       {items.map((item, i) => (
         <motion.div
           key={`${item.place}-${item.title}`}
@@ -14,7 +20,25 @@ function Timeline({ items }: { items: FoundationItem[] }) {
           transition={{ duration: 0.5, delay: i * 0.1 }}
           className="relative mb-12 last:mb-0"
         >
-          <span className="absolute -left-[calc(2rem+5px)] top-1.5 h-2.5 w-2.5 rounded-full bg-accent shadow-[0_0_0_4px_rgba(34,211,238,0.15)]" />
+          <span
+            className={`absolute top-1.5 h-2.5 w-2.5 rounded-full bg-accent shadow-[0_0_0_4px_rgba(34,211,238,0.15)] ${
+              hasLogos
+                ? "-left-[calc(2rem+5px)] md:-left-[calc(9rem+5px)]"
+                : "-left-[calc(2rem+5px)]"
+            }`}
+          />
+
+          {item.logo && (
+            <figure className="mb-5 flex h-20 w-20 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white p-2 shadow-lg shadow-black/20 md:absolute md:-left-28 md:top-0 md:mb-0 md:h-24 md:w-24 md:p-2.5">
+              <img
+                src={item.logo.src}
+                alt={item.logo.alt}
+                title={`${item.logo.alt} — ${item.logo.sourceLabel}`}
+                className="h-full w-full object-contain"
+              />
+              <figcaption className="sr-only">{item.logo.sourceLabel}</figcaption>
+            </figure>
+          )}
 
           <div className="mb-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
             <div>
@@ -28,11 +52,26 @@ function Timeline({ items }: { items: FoundationItem[] }) {
             </span>
           </div>
 
-          <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm text-slate-400">
-            {item.description.map((line, idx) => (
-              <li key={idx}>{line}</li>
-            ))}
-          </ul>
+          {item.facts && (
+            <dl className="mt-4 flex flex-wrap gap-6">
+              {item.facts.map((fact) => (
+                <div key={fact.label}>
+                  <dt className="font-mono text-[10px] uppercase tracking-widest text-slate-500">
+                    {fact.label}
+                  </dt>
+                  <dd className="mt-1 font-semibold text-white">{fact.value}</dd>
+                </div>
+              ))}
+            </dl>
+          )}
+
+          {item.description.length > 0 && (
+            <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm text-slate-400">
+              {item.description.map((line, idx) => (
+                <li key={idx}>{line}</li>
+              ))}
+            </ul>
+          )}
         </motion.div>
       ))}
     </div>

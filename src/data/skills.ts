@@ -6,7 +6,7 @@ export interface SkillGroup {
 export const skillGroups: SkillGroup[] = [
   {
     category: "Languages",
-    items: ["TypeScript", "JavaScript", "Python", "SQL"],
+    items: ["TypeScript", "JavaScript", "Python", "Java", "SQL"],
   },
   {
     category: "Frontend",
@@ -14,7 +14,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "REST APIs", "PostgreSQL"],
+    items: ["Node.js", "Express", "Django", "FastAPI", "REST APIs", "PostgreSQL"],
   },
   {
     category: "Tooling",

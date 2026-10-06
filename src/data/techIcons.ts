@@ -12,14 +12,18 @@ import {
   SiPostgresql,
   SiGit,
   SiDocker,
+  SiDjango,
+  SiFastapi,
   SiVite,
 } from "react-icons/si";
+import { FaJava } from "react-icons/fa6";
 import { Code2, Database, Globe, Workflow } from "lucide-react";
 
 const techIconMap: Record<string, IconType> = {
   typescript: SiTypescript,
   javascript: SiJavascript,
   python: SiPython,
+  java: FaJava,
   sql: Database,
 
   react: SiReact,
@@ -33,6 +37,9 @@ const techIconMap: Record<string, IconType> = {
   "node.js": SiNodedotjs,
   nodejs: SiNodedotjs,
   express: SiExpress,
+  django: SiDjango,
+  fastapi: SiFastapi,
+  "fast api": SiFastapi,
   "rest api": Globe,
   "rest apis": Globe,
   postgresql: SiPostgresql,

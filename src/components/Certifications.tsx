@@ -1,10 +1,20 @@
 import { motion } from "framer-motion";
 import { Award, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
+import { FaMicrosoft } from "react-icons/fa6";
+import { SiDatacamp, SiTrendmicro } from "react-icons/si";
+import type { IconType } from "react-icons";
 import { certifications } from "../data/certifications";
+
+const issuerLogos: Record<string, IconType> = {
+  datacamp: SiDatacamp,
+  microsoft: FaMicrosoft,
+  "trend-micro": SiTrendmicro,
+};
 
 export default function Certifications() {
   return (
-    <section className="relative bg-surface py-28">
+    <section id="certifications" className="relative bg-surface py-28">
       <div className="mx-auto max-w-4xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -20,7 +30,13 @@ export default function Certifications() {
         </motion.div>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {certifications.map((cert, i) => (
+          {certifications.map((cert, i) => {
+            const IssuerLogo = cert.issuerLogo
+              ? issuerLogos[cert.issuerLogo]
+              : undefined;
+            const isExternal = cert.credentialUrl?.startsWith("http");
+
+            return (
             <motion.div
               key={cert.name}
               initial={{ opacity: 0, y: 24 }}
@@ -30,15 +46,18 @@ export default function Certifications() {
               whileHover={{ y: -4 }}
               className="flex gap-4 rounded-xl border border-white/5 bg-bg/60 p-6 transition-colors hover:border-accent/40"
             >
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
-                <Award size={22} />
+              <span
+                className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent"
+                aria-hidden="true"
+              >
+                {IssuerLogo ? <IssuerLogo size={22} /> : <Award size={22} />}
               </span>
               <div className="flex-1">
                 <h3 className="font-semibold text-white">{cert.name}</h3>
                 <p className="mt-1 text-sm text-slate-400">
                   {cert.issuer} · {cert.date}
                 </p>
-                {cert.credentialUrl && (
+                {cert.credentialUrl && isExternal && (
                   <a
                     href={cert.credentialUrl}
                     target="_blank"
@@ -49,9 +68,19 @@ export default function Certifications() {
                     <ExternalLink size={14} />
                   </a>
                 )}
+                {cert.credentialUrl && !isExternal && (
+                  <Link
+                    to={cert.credentialUrl}
+                    className="mt-2 inline-flex items-center gap-1 text-sm text-accent transition-colors hover:text-white"
+                  >
+                    View credential
+                    <ExternalLink size={14} />
+                  </Link>
+                )}
               </div>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
