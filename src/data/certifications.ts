@@ -2,38 +2,36 @@ export interface Certification {
   name: string;
   issuer: string;
   date: string;
+  issuerLogo?: "datacamp" | "microsoft" | "trend-micro";
   credentialUrl?: string;
 }
 
 export const certifications: Certification[] = [
   {
-    name: "AWS Certified Solutions Architect – Associate",
-    issuer: "Amazon Web Services",
-    date: "2024",
-    credentialUrl: "https://aws.amazon.com/certification/",
+    name: "Data Engineer Associate Certificate",
+    issuer: "DataCamp",
+    date: "2026",
+    issuerLogo: "datacamp",
+    credentialUrl: "https://www.datacamp.com/certificate/DEA0019917472389",
   },
   {
-    name: "Meta Front-End Developer Professional Certificate",
-    issuer: "Meta",
+    name: "Lean Six Sigma Yellow Belt Certification",
+    issuer: "Jojo Bernabe",
+    date: "2025",
+    credentialUrl: "/credential-unavailable?credential=lean-six-sigma",
+  },
+  {
+    name: "Microsoft Azure Fundamentals",
+    issuer: "Microsoft",
     date: "2023",
-    credentialUrl: "https://www.coursera.org/professional-certificates/meta-front-end-developer",
+    issuerLogo: "microsoft",
+    credentialUrl: "/credential-unavailable?credential=microsoft-azure",
   },
   {
-    name: "Google Professional Cloud Developer",
-    issuer: "Google Cloud",
-    date: "2023",
-    credentialUrl: "https://cloud.google.com/certification/cloud-developer",
-  },
-  {
-    name: "Certified Kubernetes Application Developer (CKAD)",
-    issuer: "The Linux Foundation",
-    date: "2022",
-    credentialUrl: "https://www.cncf.io/certification/ckad/",
-  },
-  {
-    name: "MongoDB Certified Developer Associate",
-    issuer: "MongoDB",
-    date: "2022",
-    credentialUrl: "https://www.mongodb.com/certification",
+    name: "Introduction to Ransomware Threats Certification",
+    issuer: "Trend Micro",
+    date: "2021",
+    issuerLogo: "trend-micro",
+    credentialUrl: "/credential-unavailable?credential=introduction-to-ransomware",
   },
 ];

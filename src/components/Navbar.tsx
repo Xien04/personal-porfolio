@@ -5,11 +5,11 @@ import { Menu, X } from "lucide-react";
 const LINKS = [
   { href: "/#home", label: "Home" },
   { href: "/#about", label: "About" },
-  { href: "/foundation", label: "Foundation" },
-  { href: "/experience", label: "Experience" },
+  { href: "/#education", label: "Education" },
+  { href: "/#experience", label: "Experience" },
   { href: "/#skills", label: "Skills" },
   { href: "/#projects", label: "Projects" },
-  { href: "/certifications", label: "Certifications" },
+  { href: "/#certifications", label: "Certifications" },
   { href: "/#contact", label: "Contact" },
 ];
 

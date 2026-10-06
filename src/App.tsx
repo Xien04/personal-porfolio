@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import ExperiencePage from "./pages/ExperiencePage";
 import CertificationsPage from "./pages/CertificationsPage";
 import FoundationPage from "./pages/FoundationPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function ScrollToHash() {
   const { pathname, hash } = useLocation();
@@ -35,6 +36,8 @@ export default function App() {
           <Route path="/experience" element={<ExperiencePage />} />
           <Route path="/certifications" element={<CertificationsPage />} />
           <Route path="/foundation" element={<FoundationPage />} />
+          <Route path="/credential-unavailable" element={<NotFoundPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
       <Footer />
