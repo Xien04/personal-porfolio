@@ -58,7 +58,7 @@ export default function NotFoundPage() {
 
         <div className="mt-9 flex flex-wrap gap-3">
           <Link
-            to={credentialName ? "/certifications" : "/"}
+            to={credentialName ? "/#certifications" : "/"}
             className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg"
           >
             <ArrowLeft size={17} />
