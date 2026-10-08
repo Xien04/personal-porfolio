@@ -20,7 +20,7 @@ export const education: FoundationItem[] = [
     title: "National University — Manila",
     place: "B.S. in Computer Science with Specialization in Digital Forensics",
     period: "2019 - 2023",
-    facts: [{ label: "GWA", value: "3.14 / 4.0" }],
+    // facts: [{ label: "GWA", value: "3.50  / 4.0" }],
     image: {
       src: "/images/education/national-university-manila.jpg",
       alt: "National University Manila campus building beneath a cloudy sky",

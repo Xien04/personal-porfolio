@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import ExperiencePage from "./pages/ExperiencePage";
-import CertificationsPage from "./pages/CertificationsPage";
 import FoundationPage from "./pages/FoundationPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
@@ -34,7 +33,6 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/experience" element={<ExperiencePage />} />
-          <Route path="/certifications" element={<CertificationsPage />} />
           <Route path="/foundation" element={<FoundationPage />} />
           <Route path="/credential-unavailable" element={<NotFoundPage />} />
           <Route path="*" element={<NotFoundPage />} />
